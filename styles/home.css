@@ -1,3 +1,9 @@
 #head {
-    background-image: url('/assets/bird-head.png');
+    background-image: 'url(./assets/bird-head.png)';
+}
+#middle {
+    background-image: 'url(./assets/blue-middle.png)';
+}
+#bottom {
+    background-image: 'url(./assets/leg-pants.png)';
 }
