@@ -15,7 +15,8 @@ const catchphraseButton = document.getElementById('catchphrase-button');
 
 headDropdown.addEventListener('change', () => {
     // get the value of the head dropdown
-
+    console.log('changing the selection', headDropdown.value);
+    headEl.style.backgroundImage = `url('./assets/${headDropdown.value}.png')`;
     // increment the head change count state
     
     // update the dom for the head (use style.backgroundImage on the headEl div instead of trying to set the .src -- it's NOT an img tag!)

@@ -1,1 +1,3 @@
-/* add home page styles here */
+#head {
+    background-image: url('/assets/bird-head.png');
+}
