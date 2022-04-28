@@ -19,7 +19,6 @@ let catchphrase = [];
 
 headDropdown.addEventListener('change', () => {
     // get the value of the head dropdown
-    console.log('changing the selection', headDropdown.value);
     // increment the head change count state
     headCount++;
     // update the dom for the head (use style.backgroundImage on the headEl div instead of trying to set the .src -- it's NOT an img tag!)
@@ -32,7 +31,6 @@ headDropdown.addEventListener('change', () => {
 
 middleDropdown.addEventListener('change', () => {
     // get the value of the middle dropdown
-    console.log('changing the middle selection', middleDropdown.value);
     // increment the middle change count state
     middleCount++;
     // update the dom for the middle (NOTE: use style.backgroundImage on the middleEl div instead of trying to set the .src -- it's NOT an img tag!)
@@ -44,7 +42,6 @@ middleDropdown.addEventListener('change', () => {
 
 bottomDropdown.addEventListener('change', () => {
     // get the value of the bottom dropdown
-    console.log('changing the bottom selection', bottomDropdown.value);
     // increment the bottom change count state
     bottomCount++;
     // update the dom for the bottom (NOTE use style.backgroundImage on the bottomEl div instead of trying to set the .src -- it's NOT an img tag!)
@@ -55,7 +52,6 @@ bottomDropdown.addEventListener('change', () => {
 
 catchphraseButton.addEventListener('click', () => {
     // get the value of the catchphrase input
-    console.log(catchphraseInput.value);
     // push the new catchphrase to the catchphrase array in state
     catchphrase.push(catchphraseInput.value);
     // clear out the form input's value so it's empty to the user
@@ -66,7 +62,7 @@ catchphraseButton.addEventListener('click', () => {
 
 function displayStats() {
     // text content of the reportEl to tell the user how many times they've changed each piece of the state
-    reportEl.textContent = `You have changed the head ${headCount} times, the middle ${middleCount} times, and the bottom ${bottomCount} times.`;
+    reportEl.textContent = `You have changed the head ${headCount} times, the middle ${middleCount} times, and the bottom ${bottomCount} times. You're known for your famous catchphrases: `;
 }
 
 function displayCatchphrases() {
