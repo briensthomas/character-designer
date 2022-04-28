@@ -75,10 +75,9 @@ function displayCatchphrases() {
     // loop through each catchphrase in state
     for (let catchphraseInput of catchphrase){
         console.log(catchphrase);
-        const p = document.createElement('p');
-        document.getElementById('catchphrases').appendChild(p);
-        p.textContent = catchphraseInput;
-
+        const catchphraseContent = document.createElement('p');
+        document.getElementById('catchphrases').appendChild(catchphraseContent);
+        catchphraseContent.textContent = catchphraseInput;
     }
     // and for each catchphrase
     
